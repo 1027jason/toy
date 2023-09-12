@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
@@ -22,8 +21,8 @@ class card extends StatelessWidget {
       width: 600,
       height: 200,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(30)),
-        color: isInverted ? Colors.white : Color.fromARGB(255, 51, 50, 50),
+        borderRadius: const BorderRadius.all(Radius.circular(30)),
+        color: isInverted ? Colors.white : const Color.fromARGB(255, 51, 50, 50),
       ),
       child: Padding(
         padding: const EdgeInsets.all(30.0),
@@ -45,7 +44,7 @@ class card extends StatelessWidget {
                     offset: const Offset(-3, 4),
                     child: Icon(icon,
                         color: isInverted
-                            ? Color.fromARGB(255, 209, 204, 204)
+                            ? const Color.fromARGB(255, 209, 204, 204)
                             : Colors.black),
                   ),
                 ),
