@@ -2,6 +2,8 @@ import 'package:application/LoginScreen/loginscreen.dart';
 import 'package:application/SingUpScreen/signupscreen.dart';
 import 'package:flutter/material.dart';
 
+import '../Functions/functions.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -34,6 +36,22 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: const Text("로그인"),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () async {
+                final result = await signInWithGoogle();
+                if (result != null) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(result)),
+                  );
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Google 로그인 실패')),
+                  );
+                }
+              },
+              child: const Text("Google로 로그인"),
             ),
             const SizedBox(height: 20),
             TextButton(
