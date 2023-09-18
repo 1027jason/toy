@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>371154953544-nbo6950jnfnspinn9j53l0rlpll1c459.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.371154953544-nbo6950jnfnspinn9j53l0rlpll1c459</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>371154953544-ho1srv034hpte0lagug0o46nb04sh0ui.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAcyRgQcDBAXuW9CxP4Eor6DK1Asu1F94c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>371154953544</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.application</string>
+	<key>PROJECT_ID</key>
+	<string>lentaladapter</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lentaladapter.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:371154953544:ios:c8cc13dc06e016896e3f7d</string>
+	<key>DATABASE_URL</key>
+	<string>https://lentaladapter-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>
