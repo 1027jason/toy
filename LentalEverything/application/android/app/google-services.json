@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "371154953544",
+    "firebase_url": "https://lentaladapter-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "lentaladapter",
+    "storage_bucket": "lentaladapter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371154953544:android:d9cea6525fee1e046e3f7d",
+        "android_client_info": {
+          "package_name": "com.example.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371154953544-ho1srv034hpte0lagug0o46nb04sh0ui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.application",
+            "certificate_hash": "2e968bfaa862c9c084a7239603c00267860d8585"
+          }
+        },
+        {
+          "client_id": "371154953544-hp2pb0avfertit25qklkoqrvtle76tr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr4xUNmr1-RY91hcaOt_nPttwlEmsxGhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371154953544-hp2pb0avfertit25qklkoqrvtle76tr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
