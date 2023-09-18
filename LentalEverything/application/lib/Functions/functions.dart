@@ -34,6 +34,7 @@ Future<String?> signInWithGoogle() async {
     print(error);
     return null;
   }
+  return null;
 }
 
 Future<void> signOutGoogle() async {

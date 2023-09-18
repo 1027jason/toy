@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SignUpScreen()),
+                  MaterialPageRoute(builder: (context) => const SignUpScreen()),
                 );
               },
               child: const Text("회원가입"),
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                   );
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Google 로그인 실패')),
+                    const SnackBar(content: Text('Google 로그인 실패')),
                   );
                 }
               },
