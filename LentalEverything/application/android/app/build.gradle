@@ -11,7 +11,7 @@ if (localPropertiesFile.exists()) {
 
 def flutterRoot = localProperties.getProperty('flutter.sdk')
 if (flutterRoot == null) {
-    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+    throw new FileNotFoundException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
 }
 
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
@@ -27,11 +27,12 @@ if (flutterVersionName == null) {
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
-apply plugin: 'com.google.gms.google-services' // Google services Gradle plugin 추가
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
+    namespace 'com.example.application' // 여기에 namespace 추가
 
     defaultConfig {
         applicationId "com.example.application"
@@ -40,7 +41,6 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
 
-        // MultiDex 지원 추가
         multiDexEnabled true
     }
 
@@ -66,10 +66,7 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    // MultiDex 라이브러리 추가
     implementation 'androidx.multidex:multidex:2.0.1'
-
-    // Firebase SDK 추가
     implementation platform('com.google.firebase:firebase-bom:32.2.3')
     implementation 'com.google.firebase:firebase-analytics'
 }
